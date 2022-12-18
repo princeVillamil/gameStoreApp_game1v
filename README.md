@@ -2,7 +2,7 @@
 
 Current Project - a website that lets you "buy" a game with tokens with real auth.
 
-![alt text](client\src\Assets\firstLook.png)
+![alt text](./client/src/Assets/img/siteGif.gif)
 
 ## Table of contents
 
