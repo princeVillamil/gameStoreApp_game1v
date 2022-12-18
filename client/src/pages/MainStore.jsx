@@ -30,9 +30,9 @@ export default function MainStore() {
   }
   useEffect(()=>{
     document.body.style.background = '#151515'
-    // getTopPicks().then((x)=>{
-    //   setGameList(gameList = x.data.results)
-    // })
+    getTopPicks().then((x)=>{
+      setGameList(gameList = x.data.results)
+    })
   },[])
 
   return (
