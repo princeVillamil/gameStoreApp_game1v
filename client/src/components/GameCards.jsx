@@ -5,10 +5,10 @@ import whiteCartImg from '../Assets/img/whiteCart.png'
 export default function GameCards({leage, platforms}) {
   return (
     <li className='gameCard card'>
-      <div class="image">
+      <div className="image">
         <img src={leage['background_image']}/>
       </div>
-      <div class="gameCardInfo">
+      <div className="gameCardInfo">
         <div className="gameCardInfoPlatnScore">
           <ul>
             {leage['parent_platforms'].map((x,i)=>{

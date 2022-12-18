@@ -1,0 +1,94 @@
+.sideBar *{
+  text-decoration: none;
+}.sideBar{
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  color: black;
+  /* #151515  373737*/
+  background-color: #151515;
+  color: white;
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  padding: 105px 55px 25px 55px;
+}
+.sideBar{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.sBUser, .sBCtrls{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.sBUserInfo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.sBUserInfo, .sBInnerTitle{
+  text-decoration: none;
+  color: white;
+}.sBUserInfo span{
+  font-size: 30px;
+  font-weight: 700;
+  width: 100%;
+  max-width: 100px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: .2s ease-in-out;
+}.sBUserInfo:hover span{
+  color: hsla(0,0%,100%,.4)
+}.sBInnerTitle span{
+  font-size: 25px;
+  font-weight: 600;
+  /* outline: 1px dotted red; */
+}
+.sBUserInfo img{
+  border-radius: 50%;
+  padding: 10px;
+  /* background: linear-gradient(rgb(255, 145, 0), rgb(199, 130, 2)); */
+  background-image: linear-gradient(0deg,#d73e3e,#fed12f);
+}
+.sBUserCrls,.sBinnerCrls{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
+}
+.sBUserCrls:hover span:nth-child(1),
+.sBinnerCrls:hover span:nth-child(1){
+  background-color: white;
+}.sBUserCrls:hover span:nth-child(1) svg,
+.sBinnerCrls:hover span:nth-child(1) svg{
+  stroke: black;
+  fill: black;
+}.sBUserCrls:hover span:nth-child(1) svg path,
+.sBinnerCrls:hover span:nth-child(1) svg path{
+  stroke: black;
+  fill: black;
+}
+.sBUserCrls span:nth-child(1),
+.sBinnerCrls span:nth-child(1){
+  background-color: #3B3B3B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 5px;
+  transition: .3s ease-in-out;
+}.sBUserCrls span:nth-child(1) svg,
+.sBinnerCrls span:nth-child(1) svg{
+  width: 26px;
+  height: 26px;
+  stroke: white;
+  fill: white;
+}.sBUserCrls span:nth-child(1) svg path,
+.sBinnerCrls span:nth-child(1) svg path{
+  stroke: white;
+  fill: white;
+}

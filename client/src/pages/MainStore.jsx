@@ -5,9 +5,11 @@ import leage from '../Assets/plaeHolder'
 import Navbar from '../components/Navbar'
 import HeroTwo from '../components/HeroTwo'
 import GameCards from '../components/GameCards'
+import SideBar from '../components/SideBar'
+import GameOverview from '../components/GameOverview'
 import { useState } from 'react'
 import { useEffect } from 'react'
-
+import getTopPicks from '../services/RAWGapi.js'
 
 export default function MainStore() {
   let platforms = {
@@ -21,17 +23,22 @@ export default function MainStore() {
     nintendo: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyMSAxNic+PHBhdGggZmlsbD0nI0ZGRicgZmlsbC1ydWxlPSdldmVub2RkJyBkPSdNOCAwaDVhOCA4IDAgMTEwIDE2SDhBOCA4IDAgMTE4IDB6bS0uMTM1IDEuOTM1YTYuMDY1IDYuMDY1IDAgMDAwIDEyLjEzaDUuMTJhNi4wNjUgNi4wNjUgMCAwMDAtMTIuMTNoLTUuMTJ6bS0xLjMzIDIuMzA0aDIuNDAxbDMuMTk5IDUuMTc1VjQuMjRoMi4zNDZ2Ny40OTVIMTIuMThMOC44NjQgNi41Mzd2NS4yMDFINi41M2wuMDA1LTcuNDk5eicvPjwvc3ZnPg==',
 
   }
-  let [currentOrder, setCurrentOrder] = useState('all')
+  let [gameList, setGameList] = useState([])
+  // let [currentOrder, setCurrentOrder] = useState('all')
   let handleCurrentOrder = (e) =>{
     console.log(e.target.nextSibling.textContent.toLowerCase())
-
   }
   useEffect(()=>{
     document.body.style.background = '#151515'
+    // getTopPicks().then((x)=>{
+    //   setGameList(gameList = x.data.results)
+    // })
   },[])
+
   return (
     <div className='mainStoreContainer'>
-{/* background: linear-gradient(rgba(0, 0, 0, 0.618), rgba(0, 0, 0, 0.618)), url('./LOLmainhomeslide.jpg') no-repeat center / cover; */}
+      {/* <GameOverview platforms={platforms}/> */}
+      <SideBar/>
       <Navbar/>
       <section className='mainStoreHero'> 
         <HeroTwo leage={leage} platforms={platforms}/>
@@ -68,10 +75,16 @@ export default function MainStore() {
 
         <div className="mainCardsContainer">
           <ul className='cards'>
+            {
+              gameList.map((x,i)=>{
+                // console.log(x.name)
+                return <GameCards key={i*10} leage={x} platforms={platforms}/>
+              })
+            }
+            {/* <GameCards leage={leage} platforms={platforms}/>
             <GameCards leage={leage} platforms={platforms}/>
             <GameCards leage={leage} platforms={platforms}/>
-            <GameCards leage={leage} platforms={platforms}/>
-            <GameCards leage={leage} platforms={platforms}/>
+            <GameCards leage={leage} platforms={platforms}/> */}
           </ul>
         </div>
       </main>

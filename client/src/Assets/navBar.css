@@ -2,12 +2,13 @@
   /* height: 108px; */
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   /* padding: 0 10px; */
   /* justify-content: ; */
   background: #151515;
   color: white;
-  padding: 15px;
+  padding: 15px 55px;
+  gap: 30px;
   position: relative;
   z-index: 10;
 }
@@ -17,7 +18,7 @@
 .navbarSearchInput{
   display: flex;
   background-color: #3B3B3B;
-  width: 44.4444%;
+  width: 100%;
   border-radius:25px;
   overflow: hidden;
   align-items: center;
