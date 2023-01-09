@@ -9,7 +9,7 @@ import SideBar from '../components/SideBar'
 import GameOverview from '../components/GameOverview'
 import { useState } from 'react'
 import { useEffect } from 'react'
-import getTopPicks from '../services/RAWGapi.js'
+import {getTopPicks} from '../services/RAWGapi.js'
 
 export default function MainStore() {
   let platforms = {

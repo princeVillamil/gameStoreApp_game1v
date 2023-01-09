@@ -534,7 +534,7 @@ export default function GameOverview({platforms}) {
           <div className="gOTop">
             <span>{months[`${game['released'].split('-')[1]}`]} 18, 2015</span>
             <ul>
-              {/* {game['parent_platforms'].map((x,i)=>{
+            	{/* {game['parent_platforms'].map((x,i)=>{
                 return <li key={i+0} className='gOTopLi'><img src={`${platforms[`${x['platform']['slug']}`]}`} alt="" /></li>
                 // return <li key={i+1} className='gOTopLi'><img src={`${platforms[`${x}`]}`} alt="" /></li>
               })} */}

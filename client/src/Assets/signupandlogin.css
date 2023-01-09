@@ -1,0 +1,216 @@
+.signupContainer{
+  
+}
+.signupBody, .signupBodyTwo{
+  outline: 1px dotted red;
+  width: 100%;
+  height: calc(100vh - 62px);
+  background-color: red;
+  /* background; */
+  display: flex;
+  background: linear-gradient(51deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,.99) 21%, rgba(0,0,0,.9) 54%, rgba(0,0,0,.5) 100%), url('https://media.rawg.io/media/games/456/456dea5e1c7e3cd07060c14e96612001.jpg') no-repeat center / cover;
+}.signupBodyTwo{
+  background: linear-gradient(51deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,.99) 21%, rgba(0,0,0,.9) 54%, rgba(0,0,0,.5) 100%), url('./LOLmainhomeslide.jpg') no-repeat center / cover;
+
+}
+.signupBodyContainer{
+  max-width: 960px;
+  width: 100%;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  height: max-content;
+  transform: translate(-50%, -75%);
+}
+.suLeft{
+  display: flex;
+  min-width: 50%;
+  flex-direction: column;
+  gap: 20px;
+}.suLeft h3{
+  font-size: 35px;
+  margin-bottom: 15px;
+}.suLeft form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}.suLeft a{
+  color: rgb(177, 177, 177);
+  text-align: center;
+  width: max-content;
+}.suLeft a:hover{
+  color: rgb(0, 119, 255);
+}.suLeft input{
+  width: 100%;
+  height: 50px;
+  max-width: 304px;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 0 20px;
+  border: none;
+  background: rgba(0,0,0,.5);
+  color: white;
+}.suLeft input:focus{
+  outline: none;
+}.suLeft input:last-child{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.suRight{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}.suRight h3{
+  font-size: 25px;
+  font-weight: 100;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+
+.social-button {
+  background-position: 25px 0px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 3px;
+  margin: 0px auto;
+  outline: rgb(255, 255, 255) none 0px;
+  padding-left: 20%;
+  transition: all 0.2s cubic-bezier(0.72, 0.01, 0.56, 1) 0s;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+#facebook-connect {
+  background: rgba(0,0,0,.5) url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/facebook.svg?sanitize=true') no-repeat scroll 5px 0px / 30px 50px padding-box border-box;
+  border: 1px solid rgb(60, 90, 154);
+}
+
+#facebook-connect:hover {
+  border-color: rgb(60, 90, 154);
+  background: rgb(60, 90, 154) url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/facebook-white.svg?sanitize=true') no-repeat scroll 5px 0px / 30px 50px padding-box border-box;
+  -webkit-transition: all .8s ease-out;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease-out;
+}
+
+#facebook-connect span {
+  box-sizing: border-box;
+  color: rgb(60, 90, 154);
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  border: 0px none rgb(255, 255, 255);
+  outline: rgb(255, 255, 255) none 0px;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+#facebook-connect:hover span {
+  color: #FFF;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+#google-connect {
+  background: rgba(0,0,0,.5) url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/google-plus.png') no-repeat scroll 5px 0px / 50px 50px padding-box border-box;
+  border: 1px solid rgb(220, 74, 61);
+}
+
+#google-connect:hover {
+  border-color: rgb(220, 74, 61);
+  background: rgb(220, 74, 61) url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/google-plus-white.png') no-repeat scroll 5px 0px / 50px 50px padding-box border-box;
+  -webkit-transition: all .8s ease-out;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease-out;
+}
+
+#google-connect span {
+  box-sizing: border-box;
+  color: rgb(220, 74, 61);
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  border: 0px none rgb(220, 74, 61);
+  outline: rgb(255, 255, 255) none 0px;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+#google-connect:hover span {
+  color: #FFF;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+#twitter-connect {
+  background: rgba(0,0,0,.5) url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/twitter.png') no-repeat scroll 5px 1px / 45px 45px padding-box border-box;
+  border: 1px solid rgb(85, 172, 238);
+}
+
+#twitter-connect:hover {
+  border-color: rgb(85, 172, 238);
+  background: rgb(85, 172, 238) url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/twitter-white.png') no-repeat scroll 5px 1px / 45px 45px padding-box border-box;
+  -webkit-transition: all .8s ease-out;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease-out;
+}
+
+#twitter-connect span {
+  box-sizing: border-box;
+  color: rgb(85, 172, 238);
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  border: 0px none rgb(220, 74, 61);
+  outline: rgb(255, 255, 255) none 0px;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+#twitter-connect:hover span {
+  color: #FFF;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}

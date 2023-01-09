@@ -1,7 +1,20 @@
 import React from 'react'
+import { useEffect } from 'react'
 import '../Assets/sideBar.css'
 
 export default function SideBar() {
+  useEffect(()=>{
+    let sideBar = document.querySelector('.sideBar')
+    window.addEventListener('scroll',()=>{
+      let scrollY = window.scrollY
+      if(scrollY >= 100){
+        //   padding: 105px 55px 25px 55px;
+        sideBar.style.padding = '15px 55px 25px 55px'
+      }else{
+        sideBar.style.padding = '105px 55px 25px 55px'
+      }
+    })
+  },[])
   return (
     <div className='sideBar'>
       <div className="sBUser">

@@ -18,7 +18,7 @@ export default function GameCards({leage, platforms}) {
           <span style={{borderColor: `${leage['metacritic']>=80 ? 'rgba(109,200,73,.4)': leage['metacritic']>=65 ? 'rgba(253,202,82,.4)': 'border-color: rgba(252,75,55,.4)'}`,
               color: `${leage['metacritic']>=80 ? '#6dc849': leage['metacritic']>=65 ? '#fdca52': 'border-color: #fc4b37'}`}}>{leage['metacritic']}</span>
         </div>
-        <h3><a href="#">{leage['name']}</a></h3>
+        <h3><a href={`/game/${leage.slug}`}>{leage['name']}</a></h3>
         <div className="gameCardActions">
           <span>500 tokens</span>
           <button className="gameCardActionsCartButton">

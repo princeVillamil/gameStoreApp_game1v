@@ -92,12 +92,29 @@
 .gOverviewLeftRating{
   display: flex;
   gap: 16px;
+  
   /* grid-template-columns: 1fr 1fr 1fr; */
 }.gOverviewLeftInnerRating{
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
+  justify-content: center;
+}.gOverviewLeftInnerRating:nth-child(2){
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  padding: 0 20px;
+}.gOverviewLeftInnerRating > span:nth-child(1){
+  font-size: 25px;
+  font-weight: 700;
+}.gOverviewLeftInnerRating > span:nth-child(2){
+  color: gray;
+  text-decoration: underline;
 }
-
+.about{
+  margin-top: 30px;
+}.about p{
+  color: rgb(211, 211, 211);
+}
 
 
 .gOverviewRight .gOverviewRightImg{
