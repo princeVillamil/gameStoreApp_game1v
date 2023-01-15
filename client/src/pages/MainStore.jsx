@@ -24,6 +24,7 @@ export default function MainStore() {
 
   }
   let [gameList, setGameList] = useState([])
+  
   // let [currentOrder, setCurrentOrder] = useState('all')
   let handleCurrentOrder = (e) =>{
     console.log(e.target.nextSibling.textContent.toLowerCase())
