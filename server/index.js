@@ -1,4 +1,6 @@
 // need to fix front end before going on
+// need to add db
+
 
 const express = require('express')
 const app = express()
